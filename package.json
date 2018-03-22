@@ -1,0 +1,23 @@
+{
+  "name": "engl-visual-project",
+  "version": "1.0.0",
+  "description": "Fake tourism website for the book \"The Strange and Beautiful Sorrows of Ava Lavender.\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchelSmith/ENGL-Visual-Project.git"
+  },
+  "author": "Mitchel Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MitchelSmith/ENGL-Visual-Project/issues"
+  },
+  "homepage": "https://github.com/MitchelSmith/ENGL-Visual-Project#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3"
+  }
+}
