@@ -9,11 +9,11 @@ app.get("/", function(req, res) {
 });
 
 app.get("/index", function(req, res) {
-    res.render("index");
+    res.render("home");
 });
 
 app.get("*", function(req, res) {
-    res.render("index");
+    res.render("home");
 });
 
 app.listen(3000, function() {
