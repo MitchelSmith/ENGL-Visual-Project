@@ -5,10 +5,10 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", function(req, res) {
-    res.render("landing");
+    res.render("home");
 });
 
-app.get("/index", function(req, res) {
+app.get("/home", function(req, res) {
     res.render("home");
 });
 
