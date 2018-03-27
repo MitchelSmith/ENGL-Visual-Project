@@ -1,36 +1,37 @@
-body, html {
-    height: 100%;
+body,
+html {
+	height: 100%;
 }
 
 .navbar {
-    border-radius: 0%;
-    border: none;
-    height: 90px;
-    margin: 0;
+	border-radius: 0%;
+	border: none;
+	height: 90px;
+	margin: 0;
 }
 
 .navbar .navbar-default {
 	border: none;
 	margin-bottom: 0;
-    border-radius: 0;
+	border-radius: 0;
 }
 
 .navbar-default .navbar-collapse {
-    border: none;
-    box-shadow: none;
+	border: none;
+	box-shadow: none;
 }
 
 .navbar-default .navbar-text {
-    font-family: "PT Serif", serif;
-    margin: 0 0 0 -10px;
-    text-align: center;
-    color: black;
-    font-size: 31px;
+	font-family: "PT Serif", serif;
+	margin: 0 0 0 -10px;
+	text-align: center;
+	color: black;
+	font-size: 31px;
 	height: 75px;
-    height: auto;
-    float: right;
-    padding-top: 10px;
-    line-height: 22.5px;
+	height: auto;
+	float: right;
+	padding-top: 10px;
+	line-height: 22.5px;
 }
 
 .navbar-default .navbar-nav li a {
@@ -40,101 +41,147 @@ body, html {
 	font-size: 15px;
 }
 
-
 .navbar-brand img {
-    display: inline;
+	display: inline;
 }
 
 .logo {
-    margin: 0;
-    float: left;
+	margin: 0;
+	float: left;
 	max-width: 256px;
 	max-height: 256px;
 	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDgxLjcxNSwzMC4yODRjLTQwLjM3OS00MC4zNzktMTA2LjA4Mi00MC4zNzgtMTQ2LjQ2MiwwTDI4OSw3Ni41MzdsMi44MTksMzIuODk3bC0zMi44OTctMi44MTlMNzUuNzcsMjg5Ljc2OCAgICBsMC42NTksMTI0LjU2MUwwLDQ5MC43NThMMjEuMjQyLDUxMmw3Ni40MjktNzYuNDI5bDEyNC41NiwwLjY2bDc5LjY4NC03OS42ODRsLTIuODE5LTMyLjg5N2wzMi44OTcsMi44MTlsMTQ5LjcyNC0xNDkuNzI0ICAgIEM1MjIuMDk1LDEzNi4zNjcsNTIyLjA5NSw3MC42NjMsNDgxLjcxNSwzMC4yODR6IE0xMDUuODc2LDMwMi4xNDZsMTE3LjEyOS0xMTcuMTN2ODIuNzM2TDEwNi4zMTEsMzg0LjQ0NkwxMDUuODc2LDMwMi4xNDZ6ICAgICBNMjA5Ljg1Myw0MDYuMTIzbC04Mi4zMDEtMC40MzVsMjkuNzUtMjkuNzVoODIuNzM1TDIwOS44NTMsNDA2LjEyM3ogTTMyMC42MzIsMjk1LjM0NWwtNTQuNTE1LTQuNjczbDQuNjczLDU0LjUxNWwtMC43MSwwLjcxICAgIGgtODIuNzM2bDEzOC4zMjgtMTM4LjMyOGg4Mi43MzZMMzIwLjYzMiwyOTUuMzQ1eiBNNDYwLjQ3MywxNTUuNTA0bC0yMi4wMjQsMjIuMDI0aC04Mi43MzZsNDMuNjIxLTQzLjYyMWwtMjEuMjQyLTIxLjI0MiAgICBMMjUzLjA0NSwyMzcuNzExdi04Mi43MzZsMTcuMjM2LTE3LjIzN2w1NC41MTUsNC42NzNsLTQuNjczLTU0LjUxNWwzNi4zNy0zNi4zN2MxMy44ODctMTMuODg2LDMyLjM1LTIxLjUzNCw1MS45ODktMjEuNTM0ICAgIGMxOS42NCwwLDM4LjEwMyw3LjY0OCw1MS45OSwyMS41MzRjMTMuODg2LDEzLjg4NywyMS41MzQsMzIuMzUsMjEuNTM0LDUxLjk5QzQ4Mi4wMDcsMTIzLjE1NCw0NzQuMzU5LDE0MS42MTcsNDYwLjQ3MywxNTUuNTA0eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
 }
 
 .footer {
-    text-align: center;
-    font-family: "PT Serif", serif;
-    padding-bottom: 10px;
+	text-align: center;
+	font-family: "PT Serif", serif;
+	padding-bottom: 10px;
 }
 
 .blue-bg {
-    background: repeating-radial-gradient(circle, #1fa4c2, #3ca5bd 25%, #42aac2 70%);
+	background: repeating-radial-gradient(
+		circle,
+		#1fa4c2,
+		#3ca5bd 25%,
+		#42aac2 70%
+	);
 }
 
 .black-bg {
-    background-color: rgba(0, 0, 0, 0.5)
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel-inner {
-    height: 50vh;
+	height: 50vh;
 }
 
 .carousel-inner .item {
-    position: relative;
-    height: 100%;
+	position: relative;
+	height: 100%;
 }
 
 .carousel-inner .item .carousel-caption h3 {
-    font-size: 40px;
-    width: auto;
-    display: inline-block;
-    clear: both;
-    float: left;
-    padding: 10px 5px 0 5px;
-    margin-bottom: 0;
+	font-size: 40px;
+	width: auto;
+	display: inline-block;
+	clear: both;
+	float: left;
+	padding: 10px 5px 0 5px;
+	margin-bottom: 0;
 }
 
 .carousel-inner .item .carousel-caption p {
-    font-size: 24px;
-    display: inline-block;
-    clear: both;
-    float: left;
-    padding: 5px 5px 0 5px;
+	font-size: 24px;
+	display: inline-block;
+	clear: both;
+	float: left;
+	padding: 5px 5px 0 5px;
 }
 
 .carousel-inner .item img {
-    position: absolute;
-    top: 0%;
-    transform: translateY(-50%);
+	position: absolute;
+	top: 0%;
+	transform: translateY(-50%);
 }
 
 .carousel-inner .item .carousel-caption {
-    font-family: "Josefin Sans", sans-serif;
+	font-family: "Josefin Sans", sans-serif;
+	color: white;
+	text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+		0.5px 1px 0 #000;
+	text-align: center;
+}
+
+.community-bg {
+	background: url("/images/community-background.jpg");
+	background-size: cover;
+	background-position: 50% 55%;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+	height: 500px;
+}
+
+.about-us {
+	text-align: center;
+    font-family: "Lato", sans-serif;
     color: white;
-    text-shadow:
-   -0.5px -0.5px 0 #000,  
-   0.5px -0.5px 0 #000,
-    -0.5px 0.5px 0 #000,
-    0.5px 1px 0 #000;
-    text-align: center;
+}
+
+.about-us h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 30px;
+    margin-top: 0;
+}
+
+.about-us p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.9;
+    letter-spacing: -.012em;
+}
+
+.jack-img {
+	background: url("/images/jack.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 275px;
+}
+
+.spotlight {
+	color: black;
+	font-family: "PT Serif", serif;
+}
+
+.spotlight h1 {
+	margin-top: 0;
+	margin-bottom: 2.5%;
 }
 
 /*  #Tablet
 ================================================== */
 
 @media only screen and (max-width: 1199px) {
-    .carousel-inner .item img {
-        top: 50%;
-    }
+	.carousel-inner .item img {
+		top: 50%;
+	}
 
-    .carousel-inner .item .carousel-caption h3 {
-        font-size: 24px;
-    }
+	.carousel-inner .item .carousel-caption h3 {
+		font-size: 24px;
+	}
 
-    .carousel-inner .item .carousel-caption p {
-        font-size: 14px;
-    }
+	.carousel-inner .item .carousel-caption p {
+		font-size: 14px;
+	}
 }
-
-
 
 /*  #Mobile
 ================================================== */
 
 @media only screen and (max-width: 767px) {
-    .carousel-inner {
-        height: 30vh;
-    }
+	.carousel-inner {
+		height: 30vh;
+	}
 }
