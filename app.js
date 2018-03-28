@@ -12,8 +12,8 @@ app.get("/home", function(req, res) {
     res.render("home");
 });
 
-app.get("/resident-spotlight", function(req, res) {
-    res.render("resident-spotlight")
+app.get("/urbanite-spotlight", function(req, res) {
+    res.render("urbanite-spotlight")
 })
 
 app.get("/solstice-festival", function(req, res) {

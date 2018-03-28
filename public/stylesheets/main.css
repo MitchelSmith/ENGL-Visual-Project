@@ -3,10 +3,22 @@ html {
 	height: 100%;
 }
 
+hr {
+	display: none;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(5, 62, 97, 0.75),
+		rgba(0, 0, 0, 0)
+	);
+}
+
 .navbar {
 	border-radius: 0%;
 	border: none;
-	height: 90px;
+	min-height: 90px;
 	margin: 0;
 }
 
@@ -85,7 +97,6 @@ html {
 .carousel-inner .item .carousel-caption h3 {
 	font-size: 40px;
 	width: auto;
-	display: inline-block;
 	clear: both;
 	float: left;
 	padding: 10px 5px 0 5px;
@@ -94,7 +105,6 @@ html {
 
 .carousel-inner .item .carousel-caption p {
 	font-size: 24px;
-	display: inline-block;
 	clear: both;
 	float: left;
 	padding: 5px 5px 0 5px;
@@ -152,7 +162,8 @@ html {
 }
 
 .community-bg {
-	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/images/community-background.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("/images/community-background.jpg");
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -163,22 +174,22 @@ html {
 
 .about-us {
 	text-align: center;
-    font-family: "Lato", sans-serif;
-    color: white;
+	font-family: "Lato", sans-serif;
+	color: white;
 }
 
 .about-us h3 {
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 30px;
-    margin-top: 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding-bottom: 30px;
+	margin-top: 0;
 }
 
 .about-us p {
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 1.9;
-    letter-spacing: -.012em;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.9;
+	letter-spacing: -0.012em;
 }
 
 .jack-img {
@@ -187,6 +198,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 275px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
 .spotlight {
@@ -197,13 +209,183 @@ html {
 
 .spotlight .container h1 {
 	margin-top: 0;
-	margin-bottom: 2.5%;
+	margin-bottom: 3%;
+	text-shadow: 1.5px 1.5px 1.5px black;
+	color: rgb(223, 201, 77);
 }
 
-/*  #Tablet
+.spotlight-desc h2 {
+	font-size: 34px;
+	padding-bottom: 15px;
+	margin-top: 0;
+}
+
+.spotlight-desc p {
+	font-size: 18px;
+}
+
+.festival-blurry-img {
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url("/images/festival-blurry.png");
+	background-size: cover;
+	background-position: 50% 90%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-bottom: 0;
+	height: 300px;
+}
+
+.festival-blurry-img .container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+.festival-blurry-img .container h1 {
+	text-shadow: 1.75px 1.75px 1.75px black;
+	font-family: "PT Serif", serif;
+	font-size: 76px;
+	margin: 0;
+	background: -webkit-repeating-radial-gradient(
+		circle,
+		#dfcf44,
+		#ccb90f 25%,
+		#ccbb5a 80%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.festival-blurry-img .container h3 {
+	font-family: "PT Serif", serif;
+	color: black;
+	text-shadow: 1px 1px 1px #c5a847;
+}
+
+.solstice-history {
+	background: -webkit-repeating-radial-gradient(
+		circle,
+		#f7f7f7,
+		#fafafa 25%,
+		#ffffff 80%
+	);
+	margin-bottom: 0;
+	font-family: "Lato", serif;
+}
+
+.solstice-history .container h2 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 40px;
+	font-size: 40px;
+	color: black;
+}
+
+.solstice-history .container p {
+	font-size: 18px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.activities {
+	background-color: #010f18;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.activities .jumbotron {
+	height: 450px;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.activities .jumbotron h1 {
+	padding: 0 20px;
+	margin: 0;
+	text-align: center;
+	font-size: 45px;
+	padding: 35px 0 0 0;
+	margin-bottom: 38px;
+	border-bottom: 2px solid white;
+}
+
+.activities h2 {
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+
+.activities h2:nth-of-type(2) {
+	padding-bottom: 2.5%;
+}
+
+.events .col-md-4,
+.events .col-md-8,
+.events .col-xs-12 .missions .col-md-6,
+.missions .col-xs-12 {
+	padding: 0;
+}
+
+.event-img-1 {
+	background: url("/images/face-painting.jpg");
+	background-size: cover;
+	background-position: 50% 35%;
+	background-repeat: no-repeat;
+}
+
+.event-img-2 {
+	background: url("/images/pies.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.event-img-3 {
+	background: url("/images/bonfire.jpg");
+	background-size: cover;
+	background-position: 50% 45%;
+	background-repeat: no-repeat;
+}
+
+.event-img-4 {
+	background: url("/images/music.jpg");
+	background-size: cover;
+	background-position: 50% 30%;
+	background-repeat: no-repeat;
+}
+
+.event-desc {
+	background-color: #010f18;
+	color: white;
+	padding: 20px 70px;
+}
+
+.event-desc p {
+	padding: 0 30px;
+	font-size: 1.15vw;
+}
+
+.event-desc p:nth-of-type(1) {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	font-size: 22.5px;
+}
+
+@media only screen and (max-width: 991px) {
+	hr {
+		display: block;
+	}
+}
+
+/* #Tablet
 ================================================== */
 
 @media only screen and (max-width: 1199px) {
+
 	.carousel-inner .item img {
 		top: 50%;
 	}
@@ -215,13 +397,47 @@ html {
 	.carousel-inner .item .carousel-caption p {
 		font-size: 14px;
 	}
+
+	.event-desc p {
+		font-size: 1.25em;
+	}
 }
 
-/*  #Mobile
+/* #Mobile
 ================================================== */
 
 @media only screen and (max-width: 767px) {
+
+	.navbar-toggle {
+		margin-top: 25.5px;
+		margin-bottom: 25.5px;
+	}
+
+	.navbar-default .navbar-nav li a {
+		line-height: 15px;
+		text-align: center;
+	}
+
 	.carousel-inner {
 		height: 30vh;
+	}
+
+	.activities .jumbotron {
+		height: 100%;
+	}
+
+	.activities .event-img-1,
+	.activities .event-img-2,
+	.activities .event-img-3,
+	.activities .event-img-4 {
+		height: 450px;
+	}
+
+	.activities .jumbotron .container {
+		padding: 0 15px;
+	}
+
+	.festival-blurry-img {
+		height: 100%;
 	}
 }
