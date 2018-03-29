@@ -3,7 +3,7 @@ html {
 	height: 100%;
 }
 
-hr {
+hr.style-1 {
 	display: none;
 	border: 0;
 	height: 1px;
@@ -13,6 +13,25 @@ hr {
 		rgba(5, 62, 97, 0.75),
 		rgba(0, 0, 0, 0)
 	);
+}
+
+hr.style-2 {
+	background-image: 
+	linear-gradient(
+		to right,
+		rgb(99, 170, 228),
+		rgba(184, 207, 216, 0.95),
+		rgb(24, 104, 170),
+		rgb(151, 172, 216),
+		rgb(60, 148, 219),
+		rgb(160, 188, 211),
+		rgb(40, 118, 214));
+		height: 5px;
+		margin: 0;
+}
+
+.jumbotron {
+	margin-bottom: 0;
 }
 
 .navbar {
@@ -169,7 +188,7 @@ hr {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	margin-bottom: 0;
-	height: 500px;
+	height: 450px;
 }
 
 .about-us {
@@ -204,7 +223,7 @@ hr {
 .spotlight {
 	color: black;
 	font-family: "PT Serif", serif;
-	margin-bottom: 0;
+	padding-bottom: 4%;
 }
 
 .spotlight .container h1 {
@@ -222,6 +241,37 @@ hr {
 
 .spotlight-desc p {
 	font-size: 18px;
+}
+
+.festival-home {
+	color: black;
+	font-family: "PT Serif", serif;
+	padding-top: 2%;
+}
+
+.festival-home .container h1 {
+	margin-top: 0;
+	margin-bottom: 3%;
+	text-shadow: 1.5px 1.5px 1.5px black;
+	color: rgb(223, 201, 77);
+}
+
+.festival-more h2 {
+	font-size: 34px;
+	padding-bottom: 15px;
+	margin-top: 0;
+}
+
+.festival-more p {
+	font-size: 18px;
+}
+
+.tickets-img {
+	background: url("/images/tickets.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 275px;
 }
 
 .festival-blurry-img {
@@ -294,6 +344,10 @@ hr {
 	font-family: "Josefin Sans", sans-serif;
 }
 
+.activities h2 {
+	margin-bottom: 0;
+}
+
 .activities .jumbotron {
 	height: 450px;
 	width: 100%;
@@ -315,11 +369,16 @@ hr {
 	color: white;
 	font-size: 50px;
 	padding-top: 2%;
-	padding-bottom: 1%;
+	padding-bottom: 0;
 }
 
-.activities h2:nth-of-type(2) {
+.activities h4 {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	padding-bottom: 1%;
 	padding-bottom: 2.5%;
+	margin-bottom: 0;
 }
 
 .events .col-md-4,
@@ -376,7 +435,7 @@ hr {
 }
 
 @media only screen and (max-width: 991px) {
-	hr {
+	hr.style-1 {
 		display: block;
 	}
 }
@@ -400,6 +459,10 @@ hr {
 
 	.event-desc p {
 		font-size: 1.25em;
+	}
+
+	.community-bg {
+		height: 575px;
 	}
 }
 
@@ -438,6 +501,10 @@ hr {
 	}
 
 	.festival-blurry-img {
+		height: 100%;
+	}
+
+	.community-bg {
 		height: 100%;
 	}
 }
