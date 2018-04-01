@@ -606,6 +606,11 @@ hr.style-5 {
 	.community-bg {
 		height: 575px;
 	}
+
+	.jack-img {
+		background-position-y: 10%;
+		margin-bottom: 3%;
+	}
 }
 
 /* #Mobile
@@ -648,5 +653,32 @@ hr.style-5 {
 
 	.community-bg {
 		height: 100%;
+		overflow: auto;
+	}
+
+	.event-desc {
+		padding: 15px 50px;
+	}
+
+	.event-desc p {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+@media only screen and (max-width: 330px) {
+
+	.navbar-default .navbar-text {
+		font-size: 26px;
+	}
+
+	.news-article > .thumbnail {
+		float: none;
+	}
+	
+	.activities > h2,
+	.activities > h4 {
+		padding: 2%;
 	}
 }
